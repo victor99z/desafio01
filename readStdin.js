@@ -1,4 +1,5 @@
 
+
 function read() {
     var stdin = process.stdin,
         inputChunks = [],
