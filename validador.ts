@@ -1,3 +1,4 @@
+
 interface Tipo {
     acao: string,
     idSaaS: number
