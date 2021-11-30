@@ -1,6 +1,6 @@
 const validaCampos = require("./validators/validaCampos")
 
-var stdin = process.stdin,
+let stdin = process.stdin,
     stdout = process.stdout,
     inputChunks = [],
     parsedData = {};
@@ -14,11 +14,18 @@ stdin.on('data', function (chunk) {
 
 stdin.on('end', function () {
     stdout.write("\n====================================\n")
-    var inputJSON = inputChunks.join("");
-    parsedData = JSON.parse(inputJSON);
-    let output = validaCampos(parsedData)
-    output = JSON.stringify(output, null, '    ')
-    stdout.write(output)
+    let inputJSON = inputChunks.join("");
+    parsedDataArray = JSON.parse(inputJSON);
+
+    let outputJson = []
+
+    parsedDataArray.map(parsedData => {
+        outputJson.push(validaCampos(parsedData))
+    })
+
+    //let output = validaCampos(parsedData)
+    outputJson = JSON.stringify(outputJson, null, '    ')
+    stdout.write(outputJson)
 });
 
 

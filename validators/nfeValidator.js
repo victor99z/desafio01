@@ -1,3 +1,4 @@
+let nfe_repetida = new Set()
 
 const nfeValidator = (parsedData) => {
 
@@ -14,8 +15,15 @@ const nfeValidator = (parsedData) => {
         return parsedData
     }
 
+
+    if (!nfe_repetida.has(parsedData.payloadInput.chaveDocumento.chaveNfe)) {
+        nfe_repetida.add(parsedData.payloadInput.chaveDocumento.chaveNfe)
+    } else {
+        parsedData.violations.push("Erro ao processar evento: ChaveNfe duplicada")
+    }
+
     return parsedData
 
 }
 
-module.exports = nfeValidator;
+module.exports = { nfeValidator, nfe_repetida };

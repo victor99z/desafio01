@@ -3,7 +3,7 @@ const idUnidadeSaaSValidador = require("./idUnidadeSaaSValidator");
 
 const validaCampos = (parsedData) => {
     parsedData = idUnidadeSaaSValidador(parsedData);
-    parsedData = nfeValidator(parsedData);
+    parsedData = nfeValidator.nfeValidator(parsedData);
 
     if (parsedData.violations.length == 0) {
 
@@ -14,7 +14,6 @@ const validaCampos = (parsedData) => {
     } else {
         parsedData.payloadOutput = {}
     }
-
 
     return parsedData;
 }
