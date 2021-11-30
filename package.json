@@ -1,0 +1,25 @@
+{
+  "name": "desafios",
+  "version": "1.0.0",
+  "description": "<br>",
+  "main": "valida.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victor99z/desafio01.git"
+  },
+  "keywords": [
+    "desafio"
+  ],
+  "author": "deus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victor99z/desafio01/issues"
+  },
+  "homepage": "https://github.com/victor99z/desafio01#readme",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
