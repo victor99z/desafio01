@@ -36,5 +36,7 @@ const atualizaNfe = (parsedData, guarda_nfe, fornecedores_proibido) => {
         }
     })
 
+
+
 }
 module.exports = atualizaNfe
