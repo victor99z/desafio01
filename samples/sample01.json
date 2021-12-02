@@ -9,10 +9,100 @@
                 "numeroNota": 229,
                 "numeroSerie": 1,
                 "codigoFilial": "1",
-                "codigoFornecedor": 4,
+                "codigoFornecedor": 9,
                 "chaveNfe": "123123",
                 "idUnidadeSaas": "123123"
             }
+        },
+        "payloadOutput": {},
+        "violations": []
+    },
+    {
+        "payloadInput": {
+            "tipo": {
+                "acao": "INCLUSAO",
+                "idSaaS": null
+            },
+            "chaveDocumento": {
+                "numeroNota": 229,
+                "numeroSerie": 1,
+                "codigoFilial": "1",
+                "codigoFornecedor": 9,
+                "chaveNfe": "123123",
+                "idUnidadeSaas": ""
+            }
+        },
+        "payloadOutput": {},
+        "violations": []
+    },
+    {
+        "payloadInput": {
+            "tipo": {
+                "acao": "INCLUSAO",
+                "idSaaS": null
+            },
+            "chaveDocumento": {
+                "numeroNota": 597979,
+                "numeroSerie": 1,
+                "codigoFilial": "1",
+                "codigoFornecedor": 4,
+                "chaveNfe": "33110730159461000172550000000003361697689183",
+                "idUnidadeSaas": "b912a5a2-64db-46a9-857a-afbb24aa3e58"
+            }
+        },
+        "payloadOutput": {},
+        "violations": []
+    },
+    {
+        "payloadInput": {
+            "tipo": {
+                "acao": "ATUALIZACAO",
+                "idSaaS": null
+            },
+            "chaveDocumento": {
+                "numeroNota": 1111,
+                "numeroSerie": 1,
+                "codigoFilial": "1",
+                "codigoFornecedor": 9,
+                "chaveNfe": "123123",
+                "idUnidadeSaas": "123123"
+            }
+        },
+        "payloadOutput": {},
+        "violations": []
+    },
+    {
+        "payloadInput": {
+            "tipo": {
+                "acao": "ATUALIZACAO",
+                "idSaaS": null
+            },
+            "chaveDocumento": {
+                "numeroNota": 2222,
+                "numeroSerie": 1,
+                "codigoFilial": "1",
+                "codigoFornecedor": 9,
+                "chaveNfe": "33110730159461000172550000000003361697689183",
+                "idUnidadeSaas": "123123"
+            }
+        },
+        "payloadOutput": {},
+        "violations": []
+    },
+    {
+        "payloadInput": {
+            "tipo": {
+                "acao": "FORNECEDORES_PROIBIDOS",
+                "idSaaS": null
+            },
+            "registros": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                "fornecedor apreendido pela receita"
+            ]
         },
         "payloadOutput": {},
         "violations": []
